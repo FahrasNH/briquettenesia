@@ -1,7 +1,19 @@
-.section-wrap {
-  .section-title {
-    font-size: 32px;
-    font-weight: 700;
-    text-align: center;
+.wrap-landing {
+  padding: 0 80px;
+  overflow: hidden;
+  .section-wrap {
+    position: relative;
+    .section-title {
+      font-size: 32px;
+      font-weight: 700;
+      text-align: center;
+      position: relative;
+      display: inline-block;
+      /* Move the element to the right by 50% of the container's width */
+      left: 50%; 
+      /* Calculates 50% of the element's width, and moves it by that */ 
+      /* amount across the X-axis to the left */
+      transform: translateX(-50%);
+    }
   }
 }
