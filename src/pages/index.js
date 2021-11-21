@@ -5,11 +5,11 @@ import ProductSection from '../components/LandingPage/ProductSection'
 
 export default function Home() {
   return (
-    <>
+    <div className="wrap-landing">
       <PrincipleSection />
       <ProductSection />
       <AboutSection />
       <ContactSection />
-    </>
+    </div>
   )
 }
