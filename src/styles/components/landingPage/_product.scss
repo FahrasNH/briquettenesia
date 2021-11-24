@@ -1,0 +1,49 @@
+.ant-row {
+  justify-content: center;
+  h3 {
+    font-style: bold;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  .img-product {
+    width: 250px;
+    align-items: center;
+  
+  }
+
+  [class^="number-slide"],
+  [class*=" number-slide"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  
+  .dots {
+    display: block;
+    padding: 10px 0;
+  }
+  
+  .dot {
+    border: none;
+    width: 10px;
+    height: 10px;
+    background: #c5c5c5;
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 5px;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .dot.active {
+    background: #000;
+  }
+}
+
