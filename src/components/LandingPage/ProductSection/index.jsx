@@ -6,6 +6,7 @@ import "keen-slider/keen-slider.min.css"
 import React from "react"
  
 const ProductSection = () => {
+  const [currentSlide, setCurrentSlide] = React.useState(0)
   const [pause, setPause] = React.useState(false)
   const timer = React.useRef()
   const datas = [{
@@ -54,7 +55,10 @@ const ProductSection = () => {
     ],
   }]
   const [sliderRef, slider] = useKeenSlider({
-    loop: true,
+    initial: 0,
+    slideChanged(s) {
+      setCurrentSlide(s.details().relativeSlide)
+    },loop: true,
     duration: 1000,
     dragStart: () => {
       setPause(true)
@@ -62,8 +66,8 @@ const ProductSection = () => {
     dragEnd: () => {
       setPause(false)
     },
+    
   })
-
   React.useEffect(() => {
     sliderRef.current.addEventListener("mouseover", () => {
       setPause(true)
@@ -91,8 +95,8 @@ const ProductSection = () => {
               {datas.map(data => (
                 <Col className="list-product" span={23}>
                   <div className="keen-slider__slide number-slide1">
-                    <Col className="img-product" span={15}>
-                      <img src={data.img} alt="" />
+                    <Col span={15}>
+                      <img className="img-product" src={data.img} alt="" />
                     </Col>
                     <div>
                       <h3>{data.title}</h3>
@@ -104,22 +108,22 @@ const ProductSection = () => {
                 </Col> 
               ))}
             </div>
-          </Row>    
-        {/* {slider && (
-          <div className="dots">
-              {[...Array(slider.details().size).keys()].map((idx) => {
-                return (
-                  <button
-                    key={idx}
-                    onClick={() => {
-                      slider.moveToSlideRelative(idx)
-                    }}
-                    className={"dot" + (currentSlide === idx ? " active" : "")}
+            {slider && (
+              <div className="dots">
+                {[...Array(slider.details().size).keys()].map((idx) => {
+                  return (
+                    <button
+                      key={idx}
+                      onClick={() => {
+                        slider.moveToSlideRelative(idx)
+                      }}
+                      className={"dot" + (currentSlide === idx ? " active" : "")}
                     />
-                )
-              })}
-            </div>
-          )} */}
+                  )
+                })}
+              </div>
+            )}
+          </Row> 
     </div>
   )
 }
