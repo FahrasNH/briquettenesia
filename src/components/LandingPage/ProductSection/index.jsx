@@ -53,7 +53,7 @@ const ProductSection = () => {
       setCurrentSlide(s.details().relativeSlide)
     },
     loop: true,
-    duration: 3000,
+    duration: 5000,
     dragStart: () => {
       setPause(true)
     },
@@ -95,7 +95,7 @@ const ProductSection = () => {
               <div>
                 <h3>{data.title}</h3>
                 <ul>
-                  {data.content.map((con, idx) => <li>{con}</li>)}
+                  {data.content.map((con, idx) => <li key={idx}>{con}</li>)}
                 </ul>
               </div>
             </div>
