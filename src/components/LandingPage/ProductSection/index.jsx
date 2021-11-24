@@ -52,8 +52,8 @@ const ProductSection = () => {
     slideChanged(s) {
       setCurrentSlide(s.details().relativeSlide)
     },
-    // loop: true,
-    // duration: 1000,
+    loop: true,
+    duration: 3000,
     dragStart: () => {
       setPause(true)
     },
@@ -110,7 +110,7 @@ const ProductSection = () => {
                   onClick={() => {
                     slider.moveToSlideRelative(idx)
                   }}
-                  className={"dot" + (currentSlide === idx ? " active" : "")}
+                  className={`dot ${(currentSlide === idx ? 'active' : '')}`}
                 />
               )
             })}
