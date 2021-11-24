@@ -1,0 +1,48 @@
+  h3{
+    font-style: bold;
+    font-size: 20px;
+    line-height: 40px;
+  line-height: 155%;
+  margin-bottom: 30px;
+}
+.img-product{
+  margin: 270px 133px 374px 130.31px;
+  width: 250px;
+  height: 178.69px;
+  align-items: center;
+
+}
+[class^="number-slide"],
+[class*=" number-slide"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: 30px;
+}
+.dots {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+}
+
+.dot {
+  border: none;
+  width: 10px;
+  height: 10px;
+  background: #c5c5c5;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot.active {
+  background: #000;
+}
+
+
