@@ -1,5 +1,5 @@
 .slider-wrap {
-  h3 {
+  .title-product {
     font-style: bold;
     font-size: 20px;
     line-height: 40px;
@@ -10,7 +10,6 @@
   .img-product {
     width: 250px;
     align-items: center;
-  
   }
 
   [class^="number-slide"],
@@ -27,6 +26,7 @@
   display: block;
   padding: 10px 0;
   text-align: center;
+
   .dot {
     border: none;
     width: 10px;
@@ -36,6 +36,7 @@
     margin: 0 5px;
     padding: 5px;
     cursor: pointer;
+
     &:focus {
       outline: none;
     }
