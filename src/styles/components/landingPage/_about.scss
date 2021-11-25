@@ -1,16 +1,20 @@
-.desc {
-  font-weight: 300;
-  line-height: 30px;
-  font-size: 22px;
-  text-align: center;
-  vertical-align: top;
-  color: #E5E5E5;
+.row-about {
+  padding: 0 80px;
+  .desc {
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 22px;
+    text-align: center;
+    vertical-align: top;
+    color: #E5E5E5;
+  }
+
 }
 
 .transform-bg {
   top: -80px;
   width: 100%;
-  left: -125px;
+  left: -60px;
   height: 700px;
   width: 1550px;
   height: 700px;

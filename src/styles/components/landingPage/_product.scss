@@ -1,5 +1,4 @@
-.ant-row {
-  justify-content: center;
+.slider-wrap {
   h3 {
     font-style: bold;
     font-size: 20px;
@@ -27,6 +26,7 @@
 .dots {
   display: block;
   padding: 10px 0;
+  text-align: center;
   .dot {
     border: none;
     width: 10px;

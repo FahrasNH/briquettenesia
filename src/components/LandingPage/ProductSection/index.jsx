@@ -85,20 +85,20 @@ const ProductSection = () => {
   return (
     <div className="section-wrap">
       <h1 className="section-title">Type Of Products</h1>
-      <Row>
+      <div className="slider-wrap">
         <div ref={sliderRef} className="keen-slider">
           {datas.map(data => (
-            <div className="keen-slider__slide number-slide1">
+            <Row className="keen-slider__slide number-slide1">
               <Col span={15}>
                 <img className="img-product" src={data.img} alt="" />
               </Col>
-              <div>
+              <Col>
                 <h3>{data.title}</h3>
                 <ul>
                   {data.content.map((con, idx) => <li key={idx}>{con}</li>)}
                 </ul>
-              </div>
-            </div>
+              </Col>
+            </Row>
           ))}
         </div>
         {slider && (
@@ -116,7 +116,7 @@ const ProductSection = () => {
             })}
           </div>
         )}
-      </Row>
+      </div>
     </div>
   )
 }

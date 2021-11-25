@@ -7,7 +7,7 @@ const PrincipleSection = () => {
       <div className="section-wrap">
         <div className="transform-bg" />
         <h1 className="section-title" style={{ color: '#E5E5E5' }}>Our Guiding Principles</h1>
-        <Row gutter={48}>
+        <Row gutter={48} className="row-principles">
           <Col className="gutter-row" span={6}>
             <div className="card-title">We Act Responsibly</div>
             <hr />
