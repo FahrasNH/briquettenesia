@@ -6,13 +6,15 @@ const ContactSection = () => {
       <h3 className="title-contact">Let's Talk</h3>
       <Row>
         <Col span="12" col-12>
-          <p className="content-contact">
-            We are excited to help you re-emerge and supporting you with
-            Indonesian best coconut charcoal briquette and derivates. Our
-            business is built on connectivity and trust, we are here for you.
-            Whether your needs are to have specific briquette content, we will
-            help you to crafted as requested.
-          </p>
+          <div className="content-contact">
+            <p>
+              We are excited to help you re-emerge and supporting you with
+              Indonesian best coconut charcoal briquette and derivates. Our
+              business is built on connectivity and trust, we are here for you.
+              Whether your needs are to have specific briquette content, we will
+              help you to crafted as requested.
+            </p>
+          </div>
         </Col>
         <Col span="12" col-12>
           <div className="contact-form">
@@ -41,6 +43,7 @@ const ContactSection = () => {
                 placeholder="Message"
               ></textarea>
             </div>
+            <a className="btn">SEND</a>
           </div>
         </Col>
       </Row>
