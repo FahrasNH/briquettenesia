@@ -1,8 +1,10 @@
 .wrap-landing {
   overflow: hidden;
+
   .section-wrap {
     position: relative;
-    margin: 200px 0;
+    margin: 300px 0;
+
     .section-title {
       font-size: 32px;
       font-weight: 700;
@@ -11,10 +13,20 @@
       position: relative;
       display: inline-block;
       /* Move the element to the right by 50% of the container's width */
-      left: 50%; 
-      /* Calculates 50% of the element's width, and moves it by that */ 
+      left: 50%;
+      /* Calculates 50% of the element's width, and moves it by that */
       /* amount across the X-axis to the left */
       transform: translateX(-50%);
     }
+  }
+
+  .transform-bg {
+    top: -80px;
+    left: -60px;
+    width: 1550px;
+    height: 700px;
+    position: absolute;
+    transform: rotate(-6deg);
+    background-color: #303030;
   }
 }

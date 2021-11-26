@@ -50,7 +50,6 @@ const ProductSection = () => {
     slideChanged(s) {
       setCurrentSlide(s.details().relativeSlide);
     },
-    loop: true,
     duration: 5000,
     dragStart: () => {
       setPause(true);
@@ -61,20 +60,11 @@ const ProductSection = () => {
   });
 
   React.useEffect(() => {
-    sliderRef.current.addEventListener("mouseover", () => {
-      setPause(true);
-    });
-    sliderRef.current.addEventListener("mouseout", () => {
-      setPause(false);
-    });
-  }, [sliderRef]);
-
-  React.useEffect(() => {
     timer.current = setInterval(() => {
       if (!pause && slider) {
         slider.next();
       }
-    }, 2000);
+    }, 5000);
     return () => {
       clearInterval(timer.current);
     };
@@ -86,11 +76,11 @@ const ProductSection = () => {
       <div className="slider-wrap">
         <div ref={sliderRef} className="keen-slider">
           {datas.map((data) => (
-            <Row className="keen-slider__slide number-slide1">
+            <Row key={data.id} className="keen-slider__slide number-slide1">
               <Col span={15}>
                 <img className="img-product" src={data.img} alt="" />
               </Col>
-              <Col>
+              <Col span={9}>
                 <h3 className="title-product">{data.title}</h3>
                 <ul>
                   {data.content.map((con, idx) => (
