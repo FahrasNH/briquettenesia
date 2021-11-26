@@ -1,8 +1,8 @@
-import { Row, Col } from "antd";
+import { Row, Col } from 'antd'
 
 const ContactSection = () => {
   return (
-    <div className="section-wrap">
+    <div className="section-wrap" id="contact">
       <h3 className="title-contact">Let's Talk</h3>
       <Row>
         <Col span={12}>
@@ -54,7 +54,7 @@ const ContactSection = () => {
 
         </Col>     
           </div> */
-  );
-};
+  )
+}
 
-export default ContactSection;
+export default ContactSection

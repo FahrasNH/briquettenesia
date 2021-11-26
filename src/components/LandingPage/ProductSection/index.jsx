@@ -42,7 +42,7 @@ const ProductSection = () => {
   ]
 
   return (
-    <div className="section-wrap">
+    <div className="section-wrap" id="product">
       <h1 className="section-title">Type Of Products</h1>
       <div className="slider-wrap">
         <Slider>
