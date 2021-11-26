@@ -5,7 +5,7 @@ const ContactSection = () => {
     <div className="section-wrap">
       <h3 className="title-contact">Let's Talk</h3>
       <Row>
-        <Col span="12" col-12>
+        <Col span={12}>
           <div className="content-contact">
             <p>
               We are excited to help you re-emerge and supporting you with
@@ -16,7 +16,7 @@ const ContactSection = () => {
             </p>
           </div>
         </Col>
-        <Col span="12" col-12>
+        <Col span={12}>
           <div className="contact-form">
             <p>Send us your details and get free* sample!</p>
             <div className="input-text">

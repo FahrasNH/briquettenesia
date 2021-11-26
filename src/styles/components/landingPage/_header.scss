@@ -1,0 +1,55 @@
+.header-wrap {
+  padding: 0 80px;
+  margin: 0 0 300px 0;
+
+  .header-title {
+    text-align: left;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .desc {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 300;
+  }
+
+  .wrap-sendEmail {
+    height: 70px;
+    margin-top: 65px;
+    position: relative;
+    padding: 0 10px 0 35px;
+    border-radius: 35px;
+    background-color: #FFF;
+    box-shadow: 0 20px 50px rgba(48, 48, 48, .1);
+
+    .ant-input-affix-wrapper {
+      height: 100%;
+
+      input {
+        padding: 0 25px;
+
+        &::placeholder {
+          font-size: 16px;
+          font-weight: 300;
+        }
+      }
+    }
+
+    .col-btn {
+      .order-btn {
+        margin: 10px 0;
+        height: 50px;
+        float: right;
+        border: unset;
+        background-color: #303030;
+        color: #FFF;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 25px;
+      }
+    }
+  }
+}
