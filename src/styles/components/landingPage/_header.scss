@@ -1,6 +1,7 @@
 .header-wrap {
   padding: 0 80px;
   margin: 0 0 300px 0;
+  justify-content: space-between;
 
   .header-title {
     text-align: left;
@@ -51,5 +52,13 @@
         border-radius: 25px;
       }
     }
+  }
+
+  .img-header {
+    width: 550px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
   }
 }
