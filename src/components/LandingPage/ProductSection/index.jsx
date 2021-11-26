@@ -1,6 +1,5 @@
 import { Row, Col } from "antd";
 import { useKeenSlider } from "keen-slider/react";
-import "keen-slider/keen-slider.min.css";
 import React from "react";
 
 const ProductSection = () => {
@@ -50,6 +49,7 @@ const ProductSection = () => {
     slideChanged(s) {
       setCurrentSlide(s.details().relativeSlide);
     },
+    loop: true,
     duration: 5000,
     dragStart: () => {
       setPause(true);
