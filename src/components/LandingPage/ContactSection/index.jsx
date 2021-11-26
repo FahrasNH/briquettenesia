@@ -5,18 +5,19 @@ const ContactSection = () => {
     <div className="section-wrap">
       <h3 className="title-contact">Let's Talk</h3>
       <Row>
-        <Col span="12" col-12>
+        <Col span="12" col-12="true">
           <div className="content-contact">
             <p>
               We are excited to help you re-emerge and supporting you with
               Indonesian best coconut charcoal briquette and derivates. Our
-              business is built on connectivity and trust, we are here for you.
+              business is built on connectivity and trust, we are here for you{" "}
+              <br />
               Whether your needs are to have specific briquette content, we will
               help you to crafted as requested.
             </p>
           </div>
         </Col>
-        <Col span="12" col-12>
+        <Col span="12" col-12="true">
           <div className="contact-form">
             <p>Send us your details and get free* sample!</p>
             <div className="input-text">
