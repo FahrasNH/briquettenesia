@@ -7,7 +7,6 @@ const Slider = ({ children }) => {
   const timer = React.useRef()
 
   const [sliderRef, slider] = useKeenSlider({
-    initial: 1,
     slideChanged(s) {
       setCurrentSlide(s.details().relativeSlide)
     },

@@ -58,7 +58,7 @@ const HeaderSection = () => {
       <Col span={11}>
         <Slider>
           {datas.map((data) => (
-            <div key={data.id} className="keen-slider__slide number-slide1">
+            <div key={data.id} className={`keen-slider__slide number-slide${data.id}`}>
               <img className="img-header" src={data.img} alt="" />
             </div>
           ))}
