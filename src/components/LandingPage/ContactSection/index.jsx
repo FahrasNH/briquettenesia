@@ -1,4 +1,4 @@
-import { Row, Col } from 'antd'
+import { Row, Col } from "antd";
 
 const ContactSection = () => {
   return (
@@ -10,7 +10,8 @@ const ContactSection = () => {
             <p>
               We are excited to help you re-emerge and supporting you with
               Indonesian best coconut charcoal briquette and derivates. Our
-              business is built on connectivity and trust, we are here for you.
+              business is built on connectivity and trust, we are here for you{" "}
+              <br />
               Whether your needs are to have specific briquette content, we will
               help you to crafted as requested.
             </p>
@@ -26,18 +27,15 @@ const ContactSection = () => {
               <input type="text" name="number" placeholder="Whatsapp/Number*" />
             </div>
             <div className="input-text">
-              <input type="text" name="name" placeholder="YourName*" />
-            </div>
-            <div className="input-text">
               <input type="text" name="email" placeholder="Emai*" />
             </div>
             <div className="input-text">
               <input type="text" name="subject" placeholder="subject" />
             </div>
-            <div className="input-text">
+            <div>
               <textarea
                 name="message"
-                id="Message"
+                id="msg"
                 cols="30"
                 rows="5"
                 placeholder="Message"
@@ -48,13 +46,7 @@ const ContactSection = () => {
         </Col>
       </Row>
     </div>
-    /* <h1>Let's Talk</h1>
-          <div className="desc-contact">
-        <Col span={12} col-12>
+  );
+};
 
-        </Col>     
-          </div> */
-  )
-}
-
-export default ContactSection
+export default ContactSection;
