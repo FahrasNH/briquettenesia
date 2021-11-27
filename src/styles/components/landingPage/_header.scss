@@ -1,6 +1,7 @@
 .header-wrap {
   padding: 0 80px;
   margin: 0 0 300px 0;
+  justify-content: space-between;
 
   .header-title {
     text-align: left;
@@ -12,7 +13,7 @@
     margin-top: 30px;
     font-size: 18px;
     line-height: 35px;
-    font-weight: 300;
+    font-weight: 100;
   }
 
   .wrap-sendEmail {
@@ -51,5 +52,13 @@
         border-radius: 25px;
       }
     }
+  }
+
+  .img-header {
+    width: 550px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
   }
 }
