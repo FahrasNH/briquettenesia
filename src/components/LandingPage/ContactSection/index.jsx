@@ -27,18 +27,15 @@ const ContactSection = () => {
               <input type="text" name="number" placeholder="Whatsapp/Number*" />
             </div>
             <div className="input-text">
-              <input type="text" name="name" placeholder="YourName*" />
-            </div>
-            <div className="input-text">
               <input type="text" name="email" placeholder="Emai*" />
             </div>
             <div className="input-text">
               <input type="text" name="subject" placeholder="subject" />
             </div>
-            <div className="input-text">
+            <div>
               <textarea
                 name="message"
-                id="Message"
+                id="msg"
                 cols="30"
                 rows="5"
                 placeholder="Message"

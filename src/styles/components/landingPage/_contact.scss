@@ -35,26 +35,37 @@
 
   .input-text {
     width: 542px;
+    height: 40px;
     box-sizing: border-box;
     border: 1px solid;
     margin-bottom: 10px;
     border-radius: 4px;
   }
 
-  .input-text input,
-  textarea {
+  input,
+  #msg {
+    margin: 4px;
     width: 100%;
     border: none;
     background: none;
     outline: none;
-    padding: 4px;
+    padding: 4px 20.77px;
+  }
+
+  #msg {
+    width: 542px;
+    box-sizing: border-box;
+    border: 1px solid;
+    margin-left: 1px;
+    border-radius: 4px;
   }
 
   .btn {
     display: inline-block;
     padding: 14px 0;
-    color: white;
     background-color: #303030;
+    color: #ffff;
+    font-weight: bold;
     width: 542px;
     height: 45px;
     text-align: center;
