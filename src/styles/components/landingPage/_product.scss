@@ -5,12 +5,31 @@
     line-height: 40px;
     font-weight: 700;
     margin-bottom: 30px;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+
+  ul {
+    @media only screen and (max-width: 600px) {
+      padding: unset;
+      text-align: center;
+      list-style: none;
+      font-size: 14px;
+    }
   }
 
   .img-product {
     width: 250px;
     margin: 0 auto;
     display: block;
+
+    @media only screen and (max-width: 600px) {
+      width: 200px;
+      margin-bottom: 20px;
+    }
   }
 
   [class^="number-slide"],
@@ -28,6 +47,10 @@
   padding: 10px 0;
   text-align: center;
   margin-top: 70px;
+
+  @media only screen and (max-width: 600px) {
+    margin-top: 30px;
+  }
 
   .dot {
     border: none;

@@ -47,11 +47,14 @@ const ProductSection = () => {
       <div className="slider-wrap">
         <Slider>
           {datas.map((data) => (
-            <Row key={data.id} className={`keen-slider__slide number-slide${data.id}`}>
-              <Col span={15}>
+            <Row
+              key={data.id}
+              className={`keen-slider__slide number-slide${data.id}`}
+            >
+              <Col xs={24} sm={24} md={24} lg={15}>
                 <img className="img-product" src={data.img} alt="" />
               </Col>
-              <Col span={9}>
+              <Col xs={24} sm={24} md={24} lg={9}>
                 <h3 className="title-product">{data.title}</h3>
                 <ul>
                   {data.content.map((con, idx) => (

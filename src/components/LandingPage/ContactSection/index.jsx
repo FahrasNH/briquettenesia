@@ -12,8 +12,7 @@ const ContactSection = () => {
             <p>
               We are excited to help you re-emerge and supporting you with
               Indonesian best coconut charcoal briquette and derivates. Our
-              business is built on connectivity and trust, we are here for you{" "}
-              <br />
+              business is built on connectivity and trust, we are here for you.
               Whether your needs are to have specific briquette content, we will
               help you to crafted as requested.
             </p>
