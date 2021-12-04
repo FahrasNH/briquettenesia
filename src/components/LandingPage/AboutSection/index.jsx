@@ -1,14 +1,14 @@
-import { Row, Col } from 'antd'
+import { Row, Col } from "antd";
 
 const AboutSection = () => {
   return (
     <div className="section-wrap" id="about">
       <div className="transform-bg" />
-      <h1 className="section-title" style={{ color: '#E5E5E5' }}>
+      <h1 className="section-title" style={{ color: "#E5E5E5" }}>
         About Us
       </h1>
       <Row className="row-about">
-        <Col>
+        <Col xs={24}>
           <div className="content-about">
             <p className="desc">
               Briquettenesia is a leading manufacturer and exporter of 100%
@@ -38,7 +38,7 @@ const AboutSection = () => {
         </Col>
       </Row>
     </div>
-  )
-}
+  );
+};
 
-export default AboutSection
+export default AboutSection;

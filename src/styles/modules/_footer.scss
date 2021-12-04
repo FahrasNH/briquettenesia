@@ -2,6 +2,10 @@
   position: relative;
   padding: 30px 80px;
 
+  @media only screen and (max-width: 600px) {
+    padding: 30px 40px;
+  }
+
   .transform-bg {
     left: -60px;
     height: 700px;
@@ -17,6 +21,10 @@
     color: #E5E5E5;
     position: relative;
     margin: 50px 0 30px;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 20px;
+    }
   }
 
   .contact {
@@ -25,6 +33,10 @@
     color: #E5E5E5;
     position: relative;
     margin-bottom: 10px;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 16px;
+    }
   }
 
   .copyright {
@@ -35,5 +47,9 @@
     line-height: 25px;
     position: relative;
     text-align: center;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 16px;
+    }
   }
 }
