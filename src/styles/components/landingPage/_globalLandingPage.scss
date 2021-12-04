@@ -18,6 +18,10 @@
       /* Calculates 50% of the element's width, and moves it by that */
       /* amount across the X-axis to the left */
       transform: translateX(-50%);
+
+      @media only screen and (max-width: 600px) {
+        margin-bottom: 30px;
+      }
     }
   }
 
