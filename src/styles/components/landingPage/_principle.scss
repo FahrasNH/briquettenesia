@@ -1,6 +1,10 @@
 .row-principles {
   padding: 0 80px;
 
+  @media only screen and (max-width: 600px) {
+    padding: 0 40px;
+  }
+
   .card-title {
     color: #E5E5E5;
     font-size: 16px;
@@ -37,5 +41,17 @@
     font-weight: 300;
     line-height: 25px;
     text-align: center;
+
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 40px;
+      margin-top: 25px;
+    }
+  }
+}
+
+.bg-principle {
+  @media only screen and (max-width: 600px) {
+    height: 1450px !important;
+    width: 2000px;
   }
 }
