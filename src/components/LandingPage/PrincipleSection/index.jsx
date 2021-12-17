@@ -1,19 +1,19 @@
-import { Row, Col } from 'antd'
+import { Row, Col } from "antd";
 
 const PrincipleSection = () => {
   return (
     <div className="section-wrap" id="principle">
-      <div className="transform-bg" />
-      <h1 className="section-title" style={{ color: '#E5E5E5' }}>
+      <div className="transform-bg bg-principle" />
+      <h1 className="section-title" style={{ color: "#E5E5E5" }}>
         Our Guiding Principles
       </h1>
       <Row gutter={48} className="row-principles">
-        <Col className="gutter-row" span={6}>
+        <Col className="gutter-row" xs={24} sm={24} md={24} lg={6}>
           <div className="card-title">We Act Responsibly</div>
           <hr />
           <div className="wrap-img">
             <img
-              src={require('../../../assets/icons/skill-development.png')}
+              src={require("../../../assets/icons/skill-development.png")}
               alt="Responsibly"
             />
           </div>
@@ -24,12 +24,12 @@ const PrincipleSection = () => {
             actions.
           </p>
         </Col>
-        <Col className="gutter-row" span={6}>
+        <Col className="gutter-row" xs={24} sm={24} md={24} lg={6}>
           <div className="card-title">We Grow Up Together</div>
           <hr />
           <div className="wrap-img">
             <img
-              src={require('../../../assets/icons/performance.png')}
+              src={require("../../../assets/icons/performance.png")}
               alt="Together"
             />
           </div>
@@ -39,12 +39,12 @@ const PrincipleSection = () => {
             the future of our growth.
           </p>
         </Col>
-        <Col className="gutter-row" span={6}>
+        <Col className="gutter-row" xs={24} sm={24} md={24} lg={6}>
           <div className="card-title">We Honor Our Commitments</div>
           <hr />
           <div className="wrap-img">
             <img
-              src={require('../../../assets/icons/hand-shake.png')}
+              src={require("../../../assets/icons/hand-shake.png")}
               alt="Commitments"
             />
           </div>
@@ -53,12 +53,12 @@ const PrincipleSection = () => {
             this, we place the customer at the center of everything we do.
           </p>
         </Col>
-        <Col className="gutter-row" span={6}>
+        <Col className="gutter-row" xs={24} sm={24} md={24} lg={6}>
           <div className="card-title">We Strive For Excellence</div>
           <hr />
           <div className="wrap-img">
             <img
-              src={require('../../../assets/icons/quality.png')}
+              src={require("../../../assets/icons/quality.png")}
               alt="Excellence"
             />
           </div>
@@ -70,7 +70,7 @@ const PrincipleSection = () => {
         </Col>
       </Row>
     </div>
-  )
-}
+  );
+};
 
-export default PrincipleSection
+export default PrincipleSection;

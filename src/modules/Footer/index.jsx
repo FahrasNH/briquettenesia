@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
         Copyright &copy; 2021 · Briquettenesia - All Rights Reserved
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
