@@ -5,11 +5,12 @@
   "homepage": "https://fahrasnh.github.io/briquettenesia",
   "scripts": {
     "replaceFilePaths": "node replacer.js",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -b master -d build",
     "dev": "next dev",
     "build": "next build && next export -o build && yarn replaceFilePaths",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export -o build && yarn replaceFilePaths",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.2",
