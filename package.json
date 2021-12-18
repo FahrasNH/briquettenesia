@@ -4,13 +4,9 @@
   "private": true,
   "homepage": "https://fahrasnh.github.io/briquettenesia",
   "scripts": {
-    "replaceFilePaths": "node replacer.js",
     "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start",
-    "export": "next export -o build && yarn replaceFilePaths",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.2",
@@ -19,7 +15,6 @@
     "@zeit/next-sass": "^1.0.1",
     "antd": "^4.16.13",
     "bootstrap": "5.0.2",
-    "gh-pages": "^3.2.3",
     "install": "^0.13.0",
     "keen-slider": "^5.5.1",
     "lodash": "^4.17.20",
@@ -30,8 +25,7 @@
     "react": "17.0.1",
     "react-bootstrap": "^2.0.0-beta.4",
     "react-dom": "17.0.1",
-    "react-scroll": "^1.8.4",
-    "replace-in-file": "^6.3.2"
+    "react-scroll": "^1.8.4"
   },
   "devDependencies": {
     "url-loader": "^4.1.1"
