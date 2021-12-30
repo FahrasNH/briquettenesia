@@ -29,14 +29,27 @@ const Navbar = ({ children, className }) => {
   }
   return (
     <div className={className}>
+      <div className="burger" onClick={openMenu}>
+        <div
+          className={`x ${isOpen ? "collapse rotate30 rotate45" : ""}`}
+        ></div>
+        <div
+          className={`y ${isOpen ? "collapse" : ""}`}
+          style={{ display: isOpen ? "none" : "block" }}
+        ></div>
+        <div
+          className={`z ${isOpen ? "collapse rotate125 rotate140" : ""}`}
+        ></div>
+      </div>
       <Row className="navbar-wrap">
-        <Col xs={24} sm={24} md={24} lg={6}>
+        <Col xs={24} lg={12}>
           <h1>Briquettenesia</h1>
         </Col>
-        <Col xs={24} sm={24} md={24} lg={6}>
+        <Col xs={24} lg={12}>
+          <div className={`circle ${isOpen ? "expand" : ""}`} />
           <div className="menu">
             <ul>
-              <li>
+              <li className={`${isOpen ? "animate" : ""}`}>
                 <Link
                   to="principle"
                   spy={true}
@@ -47,7 +60,7 @@ const Navbar = ({ children, className }) => {
                   Principles
                 </Link>
               </li>
-              <li>
+              <li className={`${isOpen ? "animate" : ""}`}>
                 <Link
                   to="about"
                   spy={true}
@@ -58,7 +71,7 @@ const Navbar = ({ children, className }) => {
                   About Us
                 </Link>
               </li>
-              <li>
+              <li className={`${isOpen ? "animate" : ""}`}>
                 <Link
                   to="product"
                   spy={true}
@@ -69,7 +82,7 @@ const Navbar = ({ children, className }) => {
                   Products
                 </Link>
               </li>
-              <li>
+              <li className={`${isOpen ? "animate" : ""}`}>
                 <Link
                   to="contact"
                   spy={true}
@@ -84,18 +97,6 @@ const Navbar = ({ children, className }) => {
           </div>
         </Col>
       </Row>
-      <div className="burger" onClick={openMenu}>
-        <div
-          className={`x ${isOpen ? "collapse rotate30 rotate45" : ""}`}
-        ></div>
-        <div
-          className={`y ${isOpen ? "collapse" : ""}`}
-          style={{ display: isOpen ? "none" : "block" }}
-        ></div>
-        <div
-          className={`z ${isOpen ? "collapse rotate125 rotate140" : ""}`}
-        ></div>
-      </div>
       {children}
     </div>
   );

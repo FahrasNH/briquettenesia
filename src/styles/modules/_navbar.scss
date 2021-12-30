@@ -6,7 +6,6 @@
   justify-content: space-between;
 
 
-
   h1 {
     font-size: 36px;
     font-weight: 700;
@@ -16,40 +15,106 @@
     }
   }
 
-  div.menu {
+  .circle {
+    border-radius: 50%;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 35px;
+    left: 36px;
+    background: grey;
+    opacity: 1;
+    -webkit-transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    -moz-transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    -ms-transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    -o-transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+  }
+
+  .circle.expand {
+    width: 1200px;
+    height: 1200px;
+    top: -560px;
+    left: -565px;
+    z-index: 1;
+    -webkit-transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    -moz-transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    -ms-transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    -o-transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+    transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+  }
+
+  .menu {
     @media only screen and (max-width: 600px) {
       height: 568px;
       width: 320px;
       position: absolute;
       top: 0px;
       left: 0px;
+      z-index: 4;
+      color: white;
     }
   }
 
   ul {
     padding: 0;
+    float: right;
+
+    .animate {
+      font-size: 21px;
+      opacity: 1;
+      -webkit-transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+      -moz-transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+      -ms-transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+      -o-transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+      transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+
+      &:nth-of-type(1) {
+        top: 120px;
+        transition-delay: 0.0s;
+      }
+
+      &:nth-of-type(2) {
+        top: 190px;
+        transition-delay: 0.03s;
+
+      }
+
+      &:nth-of-type(3) {
+        top: 260px;
+        transition-delay: 0.06s;
+
+      }
+
+      &:nth-of-type(4) {
+        top: 330px;
+        transition-delay: 0.09s;
+
+      }
+    }
 
     li {
       font-size: 20px;
       font-weight: 100;
       margin-left: 50px;
       display: inline-block;
-      margin: 0;
 
       @media only screen and (max-width: 600px) {
         list-style: none;
         top: 50px;
         left: 0;
+        margin: 0;
         opacity: 1;
         width: 320px;
         text-align: center;
-        font-size: 20px;
+        font-size: 0;
         -webkit-transition: all 70ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
         -moz-transition: all 70ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
         -ms-transition: all 70ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
         -o-transition: all 70ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
         transition: all 70ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
       }
+
 
       a {
         &:hover {
@@ -66,7 +131,9 @@
       }
     }
   }
+
 }
+
 
 .burger {
   @media only screen and (max-width: 600px) {
@@ -78,8 +145,9 @@
     top: 0;
     left: 40px;
     cursor: pointer;
-
+    z-index: 3;
   }
+
 
   .x,
   .y,
@@ -112,7 +180,7 @@
 
   .collapse {
     top: 20px;
-    background: black;
+    background: #F5F5F5;
     -webkit-transition: all 70ms ease-out;
     -moz-transition: all 70ms ease-out;
     -ms-transition: all 70ms ease-out;
